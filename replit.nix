@@ -47,4 +47,6 @@
   srt
   libsForQt5.qt5.qtwayland
   libsForQt5.qt5.wrapQtAppsHook
+  # firefox
+  
 ]; }
