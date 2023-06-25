@@ -1,11 +1,16 @@
 compile = """
-
+source .config/bashrc
+./CI/build-linux.sh
 """
+
 run = "bash -norc"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 
 [nix]
 channel = "stable-22_11"
+
+[env] # not available in compile
+RAY_IS_AWESOME = "true"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".ccls-cache"]
